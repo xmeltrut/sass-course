@@ -1,0 +1,99 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+
+p, ul {
+  line-height: 24px;
+}
+
+input, button {
+  border: #ffcdb2 2px solid;
+  color: #fff;
+  font-size: 150%;
+  padding: 6px;
+}
+
+button {
+  background-color: #6d6875;
+}
+
+form {
+  margin: 0;
+}
+
+input {
+  background-color: #b5838d;
+  min-width: 50%;
+  margin-right: 12px;
+}
+
+footer {
+  background-color: #e5989b;
+  color: #333;
+  padding: 24px;
+}
+footer a:link, footer a:visited, footer a:hover, footer a:active {
+  color: #333;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  list-style-type: none;
+}
+@media only screen and (min-width: 700px) {
+  footer ul {
+    display: flex;
+  }
+  footer ul li {
+    margin-right: 12px;
+  }
+}
+
+header {
+  background-color: #ffcdb2;
+  padding: 24px;
+}
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 24px;
+}
+main h2 {
+  font-size: 200%;
+}
+main h2:first-child {
+  margin-top: 0;
+}
+
+nav {
+  background-color: #b5838d;
+  padding: 24px;
+}
+
+.products {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.products > div {
+  border: #ffb4a2 1px solid;
+  border-radius: 6px;
+  padding: 24px;
+  text-align: center;
+}
+.products > div:hover {
+  background-color: #ffcdb2;
+  cursor: pointer;
+}
+.products p {
+  margin-bottom: 0;
+}
+.products span {
+  font-size: 500%;
+}
+
+/*# sourceMappingURL=screen.css.map */

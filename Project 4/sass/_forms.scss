@@ -1,0 +1,24 @@
+@use '_variables' as *;
+
+%form-input {
+    border: $colour1 2px solid;
+    color: #fff;
+    font-size: 150%;
+    padding: ($baseline / 4);
+}
+
+button {
+    @extend %form-input;
+    background-color: $colour5;
+}
+
+form {
+    margin: 0;
+}
+
+input {
+    @extend %form-input;
+    background-color: $colour4;
+    min-width: 50%;
+    margin-right: $baseline / 2;
+}

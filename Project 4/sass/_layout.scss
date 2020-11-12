@@ -1,0 +1,53 @@
+@use '_variables' as *;
+
+footer {
+    background-color: $colour3;
+    color: #333;;
+    padding: $baseline;
+
+    a:link, a:visited, a:hover, a:active {
+        color: #333;
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style-type: none;
+        }
+
+        @media only screen and (min-width: 700px) {
+            display: flex;
+
+            li {
+                margin-right: ($baseline / 2);
+            }
+        }
+    }
+}
+
+header {
+    background-color: $colour1;
+    padding: $baseline;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+main {
+    padding: $baseline;
+
+    h2 {
+        font-size: 200%;
+    }
+
+    h2:first-child {
+        margin-top: 0;
+    }
+}
+
+nav {
+    background-color: $colour4;
+    padding: $baseline;
+}

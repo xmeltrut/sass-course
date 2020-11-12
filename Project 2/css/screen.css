@@ -1,0 +1,73 @@
+aside {
+  background-color: #e9c46a;
+  padding: 24px;
+}
+
+body {
+  display: grid;
+  grid-gap: 24px;
+  margin: 0;
+  padding: 12px;
+}
+@media only screen and (min-width: 600px) {
+  body {
+    grid-template-columns: 1fr 25%;
+  }
+}
+
+footer {
+  background-color: #f4a261;
+  padding: 24px;
+}
+@media only screen and (min-width: 600px) {
+  footer {
+    grid-column-end: span 2;
+  }
+}
+
+header {
+  background-color: #e76f51;
+  padding: 24px;
+}
+@media only screen and (min-width: 600px) {
+  header {
+    grid-column-end: span 2;
+  }
+}
+
+main {
+  padding: 24px;
+}
+
+/* this is a comment */
+body {
+  font-family: helvetica, sans-serif;
+  font-size: 100%;
+}
+
+aside {
+  text-align: right;
+}
+aside h2 {
+  margin-top: 0;
+}
+
+main h2 {
+  /*@extend %header;*/
+  border-bottom: #2a9d8f 3px solid;
+  color: #264653;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+main h3 {
+  /*@extend %header;*/
+  border-bottom: #2a9d8f 3px solid;
+  color: #2a9d8f;
+  text-transform: uppercase;
+  border-width: 2px;
+}
+main p {
+  line-height: 24px;
+}
+
+/*# sourceMappingURL=screen.css.map */

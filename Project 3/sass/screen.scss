@@ -1,0 +1,16 @@
+@use '_colours' as *;
+@use '_layout' as *;
+
+header {
+    border-bottom: $primaryColour ($baseline / 2) solid;
+}
+
+h2 {
+    color: darken($primaryColour, 20%);
+    margin-top: ($baseline * 2);
+    /*margin-top: $baseline + 24px; */
+}
+
+figure {
+    width: percentage(2 / 3);
+}

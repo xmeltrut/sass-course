@@ -1,0 +1,47 @@
+@use '_layout';
+
+$primaryColour: #264653;
+
+%header {
+    border-bottom: #2a9d8f 3px solid;
+    color: $primaryColour;
+    text-transform: uppercase;
+}
+
+@mixin header($colour: #2a9d8f) {
+    border-bottom: #2a9d8f 3px solid;
+    color: $colour;
+    text-transform: uppercase;
+}
+
+/* this is a comment */
+body {
+    font-family: helvetica, sans-serif;
+    font-size: 100%;
+}
+
+aside {
+    text-align: right;
+
+    h2 {
+        margin-top: 0;
+    }
+}
+
+main {
+    h2 {
+        /*@extend %header;*/
+        @include header($primaryColour);
+        margin-top: 0;
+    }
+
+    h3 {
+        /*@extend %header;*/
+        @include header;
+        border-width: 2px;
+    }
+
+    p {
+        line-height: 24px;
+    }
+}

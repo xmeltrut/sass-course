@@ -1,0 +1,27 @@
+@use '_variables' as *;
+
+.products {
+    display: grid;
+    grid-gap: $baseline;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    > div {
+        border: $colour2 1px solid;
+        border-radius: ($baseline / 4);
+        padding: $baseline;
+        text-align: center;
+    }
+
+    > div:hover {
+        background-color: $colour1;
+        cursor: pointer;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    span {
+        font-size:  500%;
+    }
+}
